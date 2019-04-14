@@ -13,13 +13,13 @@ class SearchBar extends React.Component{
         return(
             <div>
                 <div className="form-group">
-                <label htmlFor="searchBar">Search Here:</label>
+                <label htmlFor="searchBar">Search Image:</label>
                 <form onSubmit={this.onFormSubmit}>
                 <input 
                  type="text"
                  className="form-control" 
                  value= {this.state.inputValue}
-                 id="searchBar" placeholder = "Type some Word..." 
+                 id="searchBar" placeholder = "Type A Word Like Cars , Sea , People ..." 
                  onChange={e=>this.setState({inputValue : e.target.value})}/>
                 </form>
                 
